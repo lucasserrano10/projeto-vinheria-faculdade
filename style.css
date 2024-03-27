@@ -62,7 +62,7 @@ div {
 /** FIM DO LAYOUT CABEÇALHO CSS **/
 
 div#parte1{
-    display: inline-block;
+    display: block;
     position: relative;
     background-color: #592C12;
     transform: translate(20%, 15%);
@@ -108,51 +108,48 @@ div#parte1 > img{
     background-image: 32px;
 }
 /** FIM DA SECTION 1 CSS **/
-
-div#geral {
-    display: inline-flex;
-    position: relative;
+section#todos {
     background-color: #8C673A;
-    transform: translate(18%, 25%);
-    border-radius: 18px;
-    text-align: center;
-    width: 1000px;
-    height: 300px;
-    margin: auto;
+    display: block;
     padding: 30px;
-    
+    text-align: center;
+    width: 70vw;
+    height: 80vh;
+    border-radius: 90px;
+    transform: translate(18%, 15%);
 }
 
-div#geral > h1 {
-    font-size: 50px;
-    transform: translate(70%, 10%);
-    font-family: "Pacifico", cursive;
-    font-weight: bolder;
-    font-style: normal;
-    text-shadow: 3px 3px 3px white;
-}
-
-div#geral > h2{
-    font-family: "Teko", sans-serif;
+section#todos > h1 {
+    font-family:"Pacifico", cursive;
     color: white;
-    font-optical-sizing: auto;
-    font-weight: 450;
+    font-size: 50px;
+    font-weight: 400;
     font-style: normal;
-    text-shadow: 8px 8px 8px black;
+    text-shadow: 4px 4px 4px black;
 }
 
-div#geral > h2#centro {
-    transform: translate(-550%, 50%);
-
+section#todos > p {
+    padding: 60px;
 }
 
-div#geral > h2#esquerda {
-    transform: translate(-15%, 50%);
+section#todos > p > a {
+    padding: 5px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    text-shadow: 2px 2px 2px black;
+    font-size: 30px;
+    font-style: normal;
 }
 
-div#geral > h2#direita {
-    transform: translate(10%, 50%);
-
+p#descricao {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    font-style: normal;
+    color: black;
 }
 
 /** FIM DA SECTION 2 CSS **/
@@ -166,7 +163,7 @@ div#assinantes{
     border-radius: 18px;
     text-align: center;
     width: 1000px;
-    height: 140px;
+    height: 160px;
     margin: 10px;
     padding: 10px;
     padding-bottom: 10px;
@@ -176,10 +173,12 @@ fieldset {
     color: wheat;
     font-size: 30px;
     text-shadow: 4px 4px 4px black;
+    text-align: center;
 }
 
 aside{
     transform: translate(0%,290%);
+    padding-top: 10px;
     background-color: black;
     color: white;
     text-align: center;
